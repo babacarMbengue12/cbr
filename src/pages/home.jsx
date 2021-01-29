@@ -21,7 +21,11 @@ const Home = () => {
         {images.map((i) => {
           return (
             <div key={i} className="col-12 col-md-6 col-lg-4  mt-4">
-              <img src={i} style={{ width: "100%", height: "auto" }} />
+              <img
+                alt="scrrenshot"
+                src={i}
+                style={{ width: "100%", height: "auto" }}
+              />
             </div>
           );
         })}

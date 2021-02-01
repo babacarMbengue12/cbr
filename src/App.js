@@ -4,7 +4,6 @@ import "bootstrap/dist/js/bootstrap";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/home";
-import Home2 from "./pages/home2";
 function App() {
   return (
     <React.Fragment>
@@ -13,9 +12,6 @@ function App() {
           <Switch>
             <Route exact path="/">
               <Home />
-            </Route>
-            <Route path="/privacy">
-              <Home2 />
             </Route>
             <Route path="/not-found">{() => <h1>Not found</h1>}</Route>
           </Switch>
